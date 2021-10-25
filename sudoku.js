@@ -25,7 +25,6 @@ function isSolved(board) {
   return Array.isArray(board) && board.length === 9 && innersLength === 81;
 }
 
-
 // Takes in a board in some form and
 // returns a String that's well formatted
 // for output to the screen.

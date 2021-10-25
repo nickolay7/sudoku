@@ -4,7 +4,11 @@
   "description": "## Введение",
   "main": ".eslintrc.js",
   "scripts": {
+<<<<<<< HEAD
+    "test": "jest -i"
+=======
     "test": "jest"
+>>>>>>> origin
   },
   "repository": {
     "type": "git",
