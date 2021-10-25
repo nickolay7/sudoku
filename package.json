@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/victoriapak/project-sudoku/issues"
   },
-  "homepage": "https://github.com/victoriapak/project-sudoku#readme"
+  "homepage": "https://github.com/victoriapak/project-sudoku#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2"
+  }
 }
