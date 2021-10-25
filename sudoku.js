@@ -1,9 +1,18 @@
+
+// const scores = fs.readFileSync('./data/scores.txt', 'utf-8');
 // Takes a board as a string in the format
 // you see in the puzzle file. Returns
 // something representing a board after
 // your solver has tried to solve it.
 // How you represent your board is up to you!
-function solve(boardString) {
+function solve(boardString) {  
+  let regExp = /(.{9})/g;
+  let arrBoard = boardString.match(regExp);
+  const resultBoard = arrBoard.map((element) => {
+    return element.split('')
+  });
+
+return   resultBoard
 
 }
 
@@ -12,7 +21,8 @@ function solve(boardString) {
 // The input board will be in whatever
 // form `solve` returns.
 function isSolved(board) {
-
+  const innersLength = board.reduce((acc, el) => acc + el.length, 0);
+  return Array.isArray(board) && board.length === 9 && innersLength === 81;
 }
 
 // Takes in a board in some form and
