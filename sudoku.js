@@ -21,7 +21,8 @@ return   resultBoard
 // The input board will be in whatever
 // form `solve` returns.
 function isSolved(board) {
-
+  const innersLength = board.reduce((acc, el) => acc + el.length, 0);
+  return Array.isArray(board) && board.length === 9 && innersLength === 81;
 }
 
 
